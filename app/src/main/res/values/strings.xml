@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">ExpressDNS</string>
+
+    <string name="dns_location_list_title" translation_description="Title for the DNS location list screen where the user can see a list of DNS locations available to select." translatable="false">DNS location list</string>
+    <string name="a11y_dns_location_item_image" translation_description="Accessibility text for each of the DNS images shown in the 'DNS Location' screens." translatable="false">Picture of DNS location</string>
+    <string name="show_best_location">Show Best Location</string>
+    <string name="refresh">Refresh</string>
+</resources>

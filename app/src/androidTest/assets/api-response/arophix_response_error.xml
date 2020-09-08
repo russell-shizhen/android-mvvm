@@ -1,0 +1,4 @@
+<error>
+    <code>403</code>
+    <message>This user is not authorized to see the list of locations.</message>
+</error>

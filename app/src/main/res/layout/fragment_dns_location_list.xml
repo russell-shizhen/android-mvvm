@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/refresh"
+                android:layout_margin="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/refresh"
+                android:textColor="@color/arophix_white"
+                app:backgroundTint="@color/arophix_green_500"
+                app:shapeAppearance="@style/ShapeAppearance.Arophix.Button"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/showBestLocation"
+                android:layout_margin="@dimen/margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/show_best_location"
+                android:textColor="@color/arophix_white"
+                app:backgroundTint="@color/arophix_green_500"
+                app:shapeAppearance="@style/ShapeAppearance.Arophix.Button"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dns_location_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:paddingEnd="@dimen/card_side_margin"
+                    android:paddingStart="@dimen/card_side_margin"
+                    android:paddingTop="@dimen/header_margin"
+                    app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+                    app:spanCount="@integer/dns_location_grid_columns"
+                    tools:context=".MainActivity"
+                    tools:listitem="@layout/list_item_dns_location"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:visibility="visible"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</layout>

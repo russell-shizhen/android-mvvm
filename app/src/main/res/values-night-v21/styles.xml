@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.Arophix" parent="Base.Theme.Arophix">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

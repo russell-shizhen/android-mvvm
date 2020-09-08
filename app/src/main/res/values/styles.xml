@@ -1,0 +1,27 @@
+<resources>
+    <!-- To see how these attributes are used, please visit https://material.io/develop/android/theming/color/ -->
+    <style name="Base.Theme.Arophix" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/arophix_green_500</item>
+        <item name="colorOnPrimary">@color/arophix_yellow_500</item>
+        <item name="colorPrimaryDark">@color/arophix_green_700</item>
+        <item name="colorOnSurface">@color/arophix_black</item>
+        <item name="colorAccent">@color/arophix_green_700</item>
+        <item name="colorSurface">@color/arophix_gray_50</item>
+        <item name="colorSecondary">@color/arophix_yellow_500</item>
+        <item name="android:colorBackground">@color/arophix_gray_50</item>
+    </style>
+
+    <style name="Theme.Arophix" parent="Base.Theme.Arophix"/>
+
+    <style name="Theme.Arophix.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Arophix.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="TextAppearance.Arophix.Toolbar.Text" parent="TextAppearance.MaterialComponents.Headline5" >
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+</resources>
